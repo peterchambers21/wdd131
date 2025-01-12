@@ -1,0 +1,44 @@
+body{
+    font-family: 'Times New Roman', Times, serif;
+    font-size: 20px;
+    display: grid;
+    justify-content: center;
+}
+
+header h2{
+    color: #006EB6;
+    font-size: smaller;
+}
+
+header{
+    text-align: center;
+    letter-spacing: 1px;
+    text-transform: uppercase;
+}
+
+#listHeader {
+    padding-top: 10px;
+}
+
+li {
+    padding: 10px 0px 10px 0px;
+}
+
+main{
+    text-align: left;
+    max-width: 600px;
+    margin: 25px 2rem 50px 2rem;
+    padding: 10px 100px 10px 100px;
+    line-height: 1.5;
+}
+
+footer {
+    display: grid;
+    justify-items: center;
+    line-height: 1.5;
+}
+
+.logo{
+    width: 150px;
+    height: auto;
+}
