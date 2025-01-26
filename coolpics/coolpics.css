@@ -1,0 +1,104 @@
+@import url("https://fonts.googleapis.com/css2?family=family=Mooli&display=swap");
+ :root {
+ --primary-color: #52489c;
+ --secondary-color: #59c3c3;
+ --accent-color: #f45b69;
+ --text-dark: #333;
+ --text-light: #ebebeb;
+ --primary-font: Arial, Helvetica,sans-serif;
+ --secondary-font: Mooli, san-serif;
+ }
+
+* {
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    font-family: var(--primary-font);
+    font-size: 1.2em;
+}
+
+header {
+    background-color: var(--primary-color);
+    margin: 0;
+    padding-top: 20px;
+    padding-bottom: 10px;
+    color: var(--text-light);
+    text-align: center;
+}
+a:link, a:visited {
+    color: var(--accent-color);
+}
+
+nav ul{
+    list-style: none;
+    padding-top: 10px;
+    margin: 0;                         
+    justify-content: center;  
+    gap: 15px;   
+}
+
+button {
+    background: none;       
+    border: none;           
+    color: inherit;         
+    font: inherit;          
+    cursor: pointer;
+}
+
+h3 {
+    justify-self: center;
+    color: var(--text-dark);
+    padding-top: 25px;
+}
+
+img {
+    object-fit: cover;
+	max-width: 100%;
+    width: 250px;
+    height: 250px;
+    border: 5px solid white;
+    border-radius: 0;
+    box-shadow: 5px 5px 5px;
+    margin: 20px;
+}
+
+.gallery {
+    align-self: center;
+    justify-self: center;
+    margin: 50px;
+}
+
+footer {
+    text-align: center;
+}
+
+@media screen and (min-width: 700px){
+    .gallery{
+        /* Setting up everything in the media query */
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        gap: 3rem;
+    }
+    nav ul{
+        display: none;
+    }
+    img {
+        margin: 0px;
+    }
+}
+
+@media screen and (min-width: 1000px) {
+    /* Don't need to set everything up again becuase it was set up earlier for the smaller screen */
+    .gallery{
+        grid-template-columns: 1fr 1fr 1fr;
+    }
+    button {
+        display: none;
+    }
+    nav ul{
+        display: flex;
+
+    }
+}
