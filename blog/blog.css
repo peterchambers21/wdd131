@@ -27,34 +27,54 @@ hr {
 
 main {
     display: grid;
-    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
     gap: 50px;
 }
-
-    #article {
-        grid-column: 1 / 3;
-        display: grid;
-        grid-template-columns: 1fr 1fr 1fr;
-        gap: 50px;
-        
+    #stuff {
+        grid-column: 1 / 4;
     }
-
-        #info {
-            grid-column: 1 / 2;
-            color: var(--primary-color);
-            justify-items: end;
+        .article {
+            display: grid;
+            grid-template-columns: 1fr 1fr 1fr;
+            gap: 50px;
+            padding: 25px 0px 25px 0px
+            
         }
 
-        #review {
+            .info {
+                grid-column: 1 / 2;
+                color: var(--primary-color);
+                justify-items: end;
+                border-right: solid #EFC69B;
+            }
+
+                .date {
+                    font-size: 1.15rem;
+                    margin: 10px 10px 10px 0px;
+                }
+
+                .age {
+                    margin: 10px 10px 10px 0px;
+                }
+
+                .genre {
+                    margin: 10px 10px 10px 0px;
+                }
+
+                .rating {
+                    margin: 10px 10px 10px 0px;
+                }
+
+        .review {
             grid-column: 2 / 4;
         }
 
             .bookTitle {
                 color: var(--secondary-color);
-                justify-self: center;
             }
 
-            #review img {
+            .review img {
+                display: flex;
                 justify-self: center;
             }
 
@@ -63,8 +83,9 @@ main {
             }
 
     #filters {
-        grid-column: 3 / 4;
+        grid-column: 4 / 5;
         color: var(--primary-color);
+        border: solid #EFC69B;
     }
 
 footer {
