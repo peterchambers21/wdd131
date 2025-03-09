@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Recipe Book</title>
+    <meta name="author" content="Peter Chambers">
+    <meta name="description" content="A simple recipe book site">
+    <link rel="stylesheet" href="recipe.css">
+    <script defer src="recipe.js"></script>
+</head>
+<body>
+    <header>
+        <div class="title">
+            <img class="logo" src="images/recipe-book.png" alt="Recipe book logo">
+            <h1>RECIPE BOOK</h1>
+        </div>
+        
+        <div class="search-bar">
+            <form action="">
+                <input type="text" name="search" placeholder="Find a recipe">
+                <button type="submit">
+                    <img class="search-img" src="images/search.svg" alt="Search logo">
+                </button>
+            </form>
+        </div>
+    </header>
+    <main>
+        <div class="recipe">
+            <img class="recipe-pic" src="images/apple-crisp.jpg" alt="recipe pic">
+            <div class="tags">
+                <p class="tag">dessert</p>
+                <p class="tag">tag2</p>
+            </div>
+            <h3 class="recipe-title">Apple Crisp</h3>
+            <span class="rating" role="img" aria-label="Rating: 4 out of 5 stars">
+                <span aria-hidden="true" class="icon-star">⭐</span>
+                <span aria-hidden="true" class="icon-star">⭐</span>
+                <span aria-hidden="true" class="icon-star">⭐</span>
+                <span aria-hidden="true" class="icon-star-empty">⭐</span>
+                <span aria-hidden="true" class="icon-star-empty">☆</span>
+            </span>
+            <p class="description">Lorem ipsum dolor sit amet consectetur adipisicing elit. Commodi, in id sunt officiis laboriosam laborum quam deserunt natus odit voluptatum doloribus error deleniti minima quisquam ipsam, labore distinctio eaque? Omnis maxime nulla nam dolore excepturi ipsa, amet voluptatibus temporibus dignissimos iure facere nobis ipsum adipisci debitis repellendus quisquam alias cumque accusamus aspernatur quas velit. Aliquam praesentium labore blanditiis perferendis, eligendi facilis sapiente doloremque qui, voluptatibus repellendus obcaecati repudiandae ad numquam quo quibusdam expedita quidem excepturi autem, minima animi aut temporibus inventore. Laborum obcaecati nulla eum vel incidunt illo vitae, distinctio dolor sed quam labore repellat officia similique corrupti. Ducimus, porro.</p>
+        </div>
+    </main>
+    <footer>
+        <a href="https://www.flaticon.com/free-icons/recipe" title="recipe icons">Recipe icons created by Freepik - Flaticon</a>
+        <div class="social">
+            <!-- Social media icons provided under CC from https://www.iconfinder.com/AlfredoCreates  -->
+            <a href="#"><img src="images/instagram_icon.svg" alt="instagram icon"></a>
+            <a href="#"><img src="images/youtube_icon.svg" alt="youtube icon"></a>
+            <a href="#"><img src="images/pinterest_icon.svg" alt="pinterest icon"></a>
+        </div>
+    </footer>
+</body>
+</html>
