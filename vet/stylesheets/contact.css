@@ -1,0 +1,249 @@
+@import url("https://fonts.googleapis.com/css?family=IM+Fell+French+Canon+SC|Lato");
+
+:root {
+  --primary-color: #22223B;
+  --secondary-color: #F2E9E4;
+  --accent1-color: #4A4E69;
+  --accent2-color: #9A8C98;
+  --accent3-color: #C9ADA7;
+
+  --heading-font: "IM Fell French Canon SC";
+  --paragraph-font: Lato, Helvetica, sans-serif;
+}
+
+body {
+  background-color: var(--secondary-color);
+  font-family: var(--paragraph-font);
+  color: var(--primary-color);
+  margin: 0;
+}
+
+h1, h2, h3 {
+  font-family: var(--heading-font);
+  color: var(--accent1-color);
+}
+
+p, a {
+  font-family: var(--paragraph-font);
+}
+
+/* Header */
+header {
+  background-color: var(--primary-color);
+  display: grid;
+  grid-template-columns: repeat(7, 1fr);
+  position: relative;
+  z-index: 10;
+  padding-top: 5px;
+  padding-bottom: 5px;
+}
+
+header img {
+  grid-column: 1 / 3;
+  display: flex;
+  object-fit: cover;
+  max-width: 100%;
+  width: 150px;
+  height: 150px;
+  justify-self: center;
+  border-radius: 40%;
+}
+
+/* Nav */
+.nav {
+  grid-column: 3 / 8;
+  display: grid;
+  grid-template-columns: repeat(5, 1fr);
+  overflow: visible;
+}
+
+.dropbtn {
+  background-color: var(--accent1-color);
+  color: var(--secondary-color);
+  padding: 16px;
+  font-size: 16px;
+  border: none;
+}
+
+.dropdown {
+  position: relative;
+  display: inline-block;
+  justify-self: center;
+  align-self: center;
+}
+
+.dropdown-content {
+  display: none;
+  position: absolute;
+  top: 100%;
+  left: 0;
+  background-color: var(--secondary-color);
+  min-width: 160px;
+  box-shadow: 0px 8px 16px rgba(0,0,0,0.2);
+}
+
+.dropdown-content a {
+  color: var(--primary-color);
+  padding: 12px 16px;
+  text-decoration: none;
+  display: block;
+}
+
+.dropdown-content a:hover {
+  background-color: var(--accent3-color);
+}
+
+.dropdown:hover .dropdown-content,
+.dropdown-content:hover {
+  display: block;
+}
+
+.dropdown:hover .dropbtn {
+  background-color: var(--accent2-color);
+}
+
+.nav > a {
+  background-color: var(--accent1-color);
+  color: var(--secondary-color);
+  padding: 16px;
+  font-size: 16px;
+  border: none;
+  text-decoration: none;
+  display: flex;
+  justify-self: center;
+  align-self: center;
+  align-items: center;
+  text-align: center;
+  border-radius: 5px;
+}
+
+.nav > a:hover {
+  background-color: var(--accent2-color);
+}
+
+/* Main heading */
+main h2 {
+  text-align: center;
+  font-size: 2.5rem;
+  padding: 10px;
+  font-family: var(--heading-font);
+  color: var(--accent1-color);
+}
+
+/* Contact Section */
+.contact-page {
+  padding: 50px 20px;
+  text-align: center;
+  background-color: var(--secondary-color);
+}
+
+.contact-wrapper {
+  max-width: 900px;
+  margin: 0 auto;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 40px;
+  background-color: var(--accent3-color);
+  padding: 40px;
+  border-radius: 20px;
+}
+
+.contact-info {
+  text-align: left;
+  font-size: 1.1rem;
+  color: var(--primary-color);
+  font-family: var(--paragraph-font);
+}
+
+.contact-info h3 {
+  font-size: 1.5rem;
+  margin-bottom: 20px;
+  font-family: var(--heading-font);
+  color: var(--accent1-color);
+}
+
+.contact-form {
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+}
+
+.contact-form label {
+  text-align: left;
+  font-weight: bold;
+  font-family: var(--paragraph-font);
+}
+
+.contact-form input,
+.contact-form textarea {
+  padding: 10px;
+  border: 1px solid var(--accent2-color);
+  border-radius: 10px;
+  font-family: var(--paragraph-font);
+  background-color: var(--secondary-color);
+  color: var(--primary-color);
+}
+
+.contact-form button {
+  padding: 12px;
+  background-color: var(--primary-color);
+  color: var(--secondary-color);
+  border: none;
+  border-radius: 10px;
+  font-size: 1rem;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+  font-family: var(--paragraph-font);
+}
+
+.contact-form button:hover {
+  background-color: var(--accent1-color);
+}
+
+@media (max-width: 768px) {
+  .contact-wrapper {
+    grid-template-columns: 1fr;
+  }
+}
+
+/* Footer */
+footer {
+  background-color: var(--accent2-color);
+  margin-top: 50px;
+}
+
+.info {
+  color: var(--primary-color);
+  display: grid;
+  grid-template-columns: 300px 300px 300px;
+  gap: 100px;
+  padding: 75px 50px;
+  width: max-content;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.address,
+.hours,
+.contact {
+  width: 300px;
+  font-size: 1.25rem;
+  background-color: var(--accent3-color);
+  padding: 20px;
+}
+
+/* Socials */
+.social {
+  background-color: var(--accent2-color);
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 50px;
+  padding: 10px 500px;
+  justify-items: center;
+}
+
+.social a img {
+  background-color: var(--secondary-color);
+  width: 40px;
+  height: 40px;
+}
